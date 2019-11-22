@@ -1,9 +1,8 @@
-# -*- coding: future_fstrings -*-
 import requests
 import json
 
 from requests.exceptions import HTTPError
-from .group import Group
+from .group import Group, GroupEncoder
 
 
 class Groups:
@@ -40,6 +39,27 @@ class Groups:
 
         return False
 
+    def create_group(self, group):
+        """
+        Create new group that the client has access to
+        :return: Group Object
+        """
+        # form the url
+        url = f'{self.base_url}/{self.groups_snippet}'
+        # form the headers
+        headers = self.client.auth_header
+
+        json_dict = GroupEncoder().default(group)
+        # get the response
+        response = requests.post(url, headers=headers, json=json_dict)
+        # 200 is the only successful code, raise an exception on any other response code
+        if response.status_code != 200:
+            raise HTTPError(response, f'Get Groups request returned http error: {response.json()}')
+        
+        response_dict = json.loads(response.text)
+        new_group = Group(response_dict[Group.name_key],response_dict[Group.id_key],  response_dict[Group.is_readonly_key], response_dict[Group.is_on_dedicated_capacity_key])
+        
+        return new_group
     def get_groups(self):
         """
         Fetches all groups that the client has access to

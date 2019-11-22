@@ -1,4 +1,4 @@
-# -*- coding: future_fstrings -*-
+
 import requests
 import json
 from requests.exceptions import HTTPError
