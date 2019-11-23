@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <title>Login || SignUp</title>
+
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#212121">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#212121">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#212121">
+
+    <!-- BEGIN BASE CSS STYLE -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
+        type="text/css">
+    <link href="assets/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="assets/essential.css" rel="stylesheet" type="text/css">
+    <link href="assets/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/chat.css" rel="stylesheet" type="text/css">
+    <link href="assets/style.css" rel="stylesheet" type="text/css">
+    <!-- BEGIN END BASE CSS STYLE -->
+
+</head>
+
+<body>
+    <div class="col-md-6 bg_header col-md-offset-3 m-t-10">
+        <div class="form-content">
+            <div class="form-items">
+                <h3 class="m-t-0">ALAR TAXI.</h3>
+                <p class="f-s-12">Access to the most powerfull tool in the entire design and web industry.</p>
+                <div class="tabbable">
+                    <ul class="nav nav-tabs nav-tabs-bottom nav-justified hidden-xs hidden-sm">
+                        <li class="active"><a href="#bottom_style1" data-toggle="tab" aria-expanded="true">Login</a></li>
+                        <li class=""><a href="#bottom_style2" data-toggle="tab" aria-expanded="false">Registration</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="bottom_style1">
+                            <h3 class="f-w-400 m-b-5">Welcome back!</h3>
+                            <p class="m-b-0">Sign in to your account to continue</p>
+                            <br>
+                            <div class="form-group">
+                                <div class="sm-form-design">
+                                    <input type="text" name="name" id="modal_username" class="form-control" placeholder="Please enter your username" required="" autocomplete="off">
+                                    <label class="control-label">Email</label>
+                                </div>
+                            </div>
+                            <div class="form-group m-b-20">
+                                <div class="sm-form-design">
+                                    <input type="text" name="name" id="modal_password" class="form-control" placeholder="Please enter your password" required="" autocomplete="off">
+                                    <label class="control-label">Password</label>
+                                </div>
+                                <div class="form-check pull-left">
+                                    <div class="form-check-label">
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="form-check-input" class="styled form-check-input" type="checkbox" checked="" autocomplete="off">
+                                            <label for="form-check-input">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn p-t-12 p-b-12 btn-block btn-primary">Sign In</button>
+                            
+                            <div class="m-t-30 m-b-20 f-s-12">
+                                Don't have an account yet? <a href="#bottom_style2" data-toggle="tab" aria-expanded="true">Sign Up</a>
+                                <a href="javascript:void(0)" class="f-s-12 d-block m-t-5">Forgot password?</a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="bottom_style2">
+                            <h3 class="f-w-400 m-b-5">New Registration!</h3>
+                            <p class="m-b-0">Sign up to your account to continue</p>
+                            <br>
+                            <div class="form-group">
+                                <div class="sm-form-design">
+                                    <input type="text" name="name" id="modal_username11" class="form-control" placeholder="Please enter your username" required="" autocomplete="off">
+                                    <label class="control-label">Fullname</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="sm-form-design">
+                                    <input type="text" name="name" id="modal_username2" class="form-control" placeholder="Please enter your username" required="" autocomplete="off">
+                                    <label class="control-label">Email</label>
+                                </div>
+                            </div>
+                            <div class="form-group m-b-20">
+                                <div class="sm-form-design">
+                                    <input type="text" name="name" id="modal_password1" class="form-control" placeholder="Please enter your password" required="" autocomplete="off">
+                                    <label class="control-label">Password</label>
+                                </div>
+                                <div class="form-check pull-left">
+                                    <div class="form-check-label">
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="form-check-input1" class="styled form-check-input" type="checkbox" checked="" autocomplete="off">
+                                            <label for="form-check-input1">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn p-t-12 p-b-12 btn-block btn-primary">Sign Up</button>
+                            
+                            <div class="m-t-30 m-b-20 f-s-12">
+                                Have an account yet? <a href="#bottom_style1" data-toggle="tab" aria-expanded="false">Sign In</a>
+                                <a href="javascript:void(0)" class="f-s-12 d-block m-t-5">Forgot password?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BEGIN BASE JS -->
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/jquery-ui.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+    <script src="assets/nicescroll.min.js"></script>
+    <script src="assets/perfect-scrollbar.jquery.min.js"></script>
+    <script src="assets/jquery.slimscroll.min.js"></script>
+    <script src="assets/jquery.sparkline.js"></script>
+    <!-- END BASE JS -->
+
+    <!-- BEGIN PAGE LEVEL JS -->
+    <script src="assets/chatVendor.js"></script>
+    <script src="assets/chat.js"></script>
+    <script src="assets/app.js"></script>
+    <!-- END PAGE LEVEL JS -->
+</body>
+
+</html>

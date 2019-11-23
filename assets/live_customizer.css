@@ -1,0 +1,260 @@
+/* --------------------------------------
+=========================================
+ALAR TAXI - Multipurpose Bootstrap Admin Template
+Version: 1.0
+Designed By: Perfectin (Palani Velayudam)
+=========================================
+1. Live Customizer
+--------------------------------------------------------*/
+/** ************************************* **
+	DO NOT CHANGE ANYTHING HERE!
+	REWRITE IN A CUSTOM CSS FILE IF REQUIRED!
+ ** ************************************* **/
+
+/**	1. Live Customizer
+*************************************************** **/
+.template-option-logo {
+    color: #0072ff;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 25px;
+}
+
+.template-options-wrapper {
+    direction: ltr;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -281px;
+    width: 280px;
+    background-color: #fff;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px 25px 25px;
+    transition: all 0.2s ease-in-out;
+    z-index: 1031;
+
+}
+
+.template-options-wrapper.show {
+    right: 0;
+    overflow-x: hidden;
+}
+
+.template-options-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    color: #adb5bd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 172px;
+    left: -50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-right-width: 0;
+    background-color: #fff;
+}
+
+@media (min-width: 576px) {
+    .template-options-btn {
+        top: 163px;
+    }
+}
+
+.template-options-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.skin-mode-item + .skin-mode-item {
+    margin-left: 20px;
+}
+
+.skin-mode-item a {
+    width: 50px;
+    height: 30px;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.skin-mode-item a.skin-light-mode {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+}
+
+.skin-mode-item a.skin-dark-mode {
+    background-color: #343a40;
+    border: 1px solid #212529;
+}
+
+.skin-mode-item span {
+    font-size: 12px;
+}
+
+.option-row-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.option-row-wrapper + .option-row-wrapper {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e9ecef;
+}
+
+.option-row-wrapper .slim-options-label {
+    margin-bottom: 0;
+}
+
+.option-row-wrapper > div:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.option-row-wrapper .rdiobox {
+    margin-left: 15px;
+    margin-bottom: 0;
+    direction: ltr;
+    min-width: 50px;
+}
+
+.option-row-wrapper .rdiobox span::before {
+    left: 0 !important;
+    right: auto !important;
+}
+
+.option-row-wrapper .rdiobox span::after {
+    left: 5px !important;
+    right: auto !important;
+}
+
+#change_bg_theme {
+    margin-top: -3px;
+}
+
+.option-row-wrapper .fcp-colors {
+    display: inline-flex;
+}
+
+.option-row-wrapper .fcp-colors .color-selector {
+    display: inline-block;
+    vertical-align: middle;
+    height: 14px;
+    width: 14px;
+    border-radius: 10px;
+    margin: 0 5px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    right: 47px;
+    position: relative;
+    margin-top: 5px;
+}
+
+.option-row-wrapper .fcp-colors .color-blue {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.option-row-wrapper .fcp-colors .color-purple {
+    background-color: #9368E9;
+    border: 1px solid #9368E9;
+}
+
+.option-row-wrapper .fcp-colors .color-orange {
+    background-color: #f96332;
+    border: 1px solid #f96332;
+}
+
+.option-row-wrapper .fcp-colors .color-green {
+    background-color: #18ce0f;
+    border: 1px solid #18ce0f;
+}
+
+.option-row-wrapper .fcp-colors .color-red {
+    background-color: #FF3636;
+    border: 1px solid #FF3636;
+}
+
+.option-row-wrapper .fcp-colors .color-azure {
+    background-color: #2CA8FF;
+    border: 1px solid #2CA8FF;
+}
+
+.option-row-wrapper .fcp-colors .color-black {
+    background-color: #333333;
+    border: 1px solid #333333;
+}
+
+.option-row-wrapper .fcp-colors .color-selector.selected,
+.option-row-wrapper .fcp-colors .color-selector:hover {
+    -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 4px #88b8ff;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #88b8ff;
+}
+
+.bg_imgs li {
+    display: block;
+    padding: 2px 2px;
+    width: 25%;
+    float: left;
+}
+
+.bg_imgs > li > a.img-holder {
+    font-size: 16px;
+    text-align: center;
+    border-radius: 0px;
+    background-color: #FFF;
+    border: 3px solid #FFF;
+    padding-left: 0;
+    padding-right: 0;
+    opacity: 1;
+    cursor: pointer;
+    display: block;
+    max-height: 100px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.bg_imgs img {
+    border-radius: 0;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.bg_imgs > .active > a.img-holder {
+    border-color: #00bbff;
+    background-color: #FFFFFF;
+}
+
+
+.close_layer_theme {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    opacity: 1;
+    top: 0;
+    left: auto;
+    content: "";
+    z-index: 1030;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.35);
+    -webkit-transition: all 370ms ease-in;
+    -moz-transition: all 370ms ease-in;
+    -o-transition: all 370ms ease-in;
+    -ms-transition: all 370ms ease-in;
+    transition: all 370ms ease-in;
+}
+
+.close_layer_theme.visible {
+    opacity: 1;
+}

@@ -1,0 +1,677 @@
+.fr,
+.h-category-item .h-conv-user .h-user .h-notify,
+.h-category-item .h-conv-user .h-user .u-agent-avatar,
+div.header>div {
+    float: right
+}
+
+.avatar-image,
+table {
+    border-collapse: collapse
+}
+
+.clear::after,
+.h-chat .h-comment::after,
+.h-chat .h-conv ul li::after,
+.h-conv-chat .agent-chat .agent-comment::after,
+.h-conv-chat .agent-chat .agent-conv ul li::after,
+.h-conv-chat .img-content::after,
+.h-conv-chat .user-chat .user-comment::after,
+.h-conv-chat .user-chat .user-conv ul li::after,
+.img-content::after,
+.vote-yes .submit-rating,
+div.h-channel .h-header .clearboth,
+div.h-conv .h-header .clearboth {
+    clear: both
+}
+
+@font-face {
+    font-family: fs-icons;
+    src: url(../fonts/fs-icons_91a257055e1185e7bda9a30b0921e892-d5e58d1365a442138018d01e362962f3.eot);
+    src: url(../fonts/fs-icons_91a257055e1185e7bda9a30b0921e892-d5e58d1365a442138018d01e362962f3.eot?#iefix) format("embedded-opentype"), url(../fonts/fs-icons_91a257055e1185e7bda9a30b0921e892-7012c664bbed21e05fdcb9fff19ca707.woff2) format("woff2"), url(../fonts/fs-icons_91a257055e1185e7bda9a30b0921e892-0be8f5f28eca9542c64b349a1f60b808.woff) format("woff"), url(../fonts/fs-icons_91a257055e1185e7bda9a30b0921e892-352c4a42d36b993d88941fdeecfe2c75.ttf) format("truetype"), url(../fonts/fs-icons_91a257055e1185e7bda9a30b0921e892-8f68c9b2ddf8408aab5a5374b6daed07.svg#fs-icons) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: fs-icons;
+        src: url(../fonts/fs-icons_91a257055e1185e7bda9a30b0921e892-8f68c9b2ddf8408aab5a5374b6daed07.svg#fs-icons) format("svg")
+    }
+}
+
+[data-icon]:before {
+    content: attr(data-icon)
+}
+
+.icon-agent_default_pic:before,
+.icon-compress-alt:before,
+.icon-download:before,
+.icon-expand-alt:before,
+.icon-ic_attachment:before,
+.icon-ic_back:before,
+.icon-ic_chat:before,
+.icon-ic_chat_double:before,
+.icon-ic_chat_icon:before,
+.icon-ic_close:before,
+.icon-ic_close_small:before,
+.icon-ic_download_white:before,
+.icon-ic_faq:before,
+.icon-ic_image:before,
+.icon-ic_message:before,
+.icon-ic_message_error:before,
+.icon-ic_message_sending:before,
+.icon-ic_not_verified:before,
+.icon-ic_pencil:before,
+.icon-ic_reply:before,
+.icon-ic_search:before,
+.icon-ic_send:before,
+.icon-ic_smiley2:before,
+.icon-ic_smiley:before,
+.icon-ic_trash:before,
+.icon-ic_unauthenticated:before,
+[data-icon]:before {
+    display: inline-block;
+    font-family: fs-icons;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: 1;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+hr,
+menu,
+nav,
+section {
+    display: block
+}
+
+.preview-container .preview-wrapper .campaign-section .content .h-message-text .bubble-attachment,
+mark {
+    font-style: italic
+}
+
+.icon-agent_default_pic:before {
+    content: "\f100"
+}
+
+.icon-compress-alt:before {
+    content: "\f101"
+}
+
+.icon-download:before {
+    content: "\f102"
+}
+
+.icon-expand-alt:before {
+    content: "\f103"
+}
+
+.icon-ic_attachment:before {
+    content: "\f104"
+}
+
+.icon-ic_back:before {
+    content: "\f105"
+}
+
+.hotline-launcher {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 5px !important;
+    bottom: 0;
+    display: none;
+    margin: 0 20px 0 0;
+    position: fixed !important;
+    right: 0 !important;
+    transition: all 195ms ease-in;
+    width: 390px;
+    z-index: 9996 !important;
+}
+
+.d-hotline.h-btn {
+    border-radius: 34px 8px 34px 34px;
+    bottom: 6px;
+    box-shadow: 0 5px 4px 0 rgba(0, 0, 0, .26);
+    color: #fff;
+    cursor: pointer;
+    display: table;
+    height: 60px;
+    padding: 7px 10px 10px;
+    position: absolute;
+    right: 5px;
+    width: 60px;
+    z-index: 9995;
+}
+
+.viewport.h-chat-custom {
+    background: #fff;
+    border-radius: 5px;
+    bottom: 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .16) !important;
+    height: 80% !important;
+    max-height: unset;
+    min-height: unset;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: all 150ms ease-in;
+    z-index: 1;
+}
+
+.viewport.h-chat-custom .help-text {
+    align-items: center;
+    background: rgba(9, 30, 66, .74);
+    border-radius: 6px;
+    bottom: 6px;
+    color: #fff;
+    display: none;
+    font-size: 12px;
+    height: auto;
+    justify-content: center;
+    line-height: 1.4;
+    margin: 0 2%;
+    max-height: 120px;
+    min-height: 60px;
+    overflow: hidden;
+    padding: .85rem;
+    position: absolute;
+    text-align: left;
+    top: unset;
+    width: 96%;
+    word-break: break-word;
+    z-index: 20;
+}
+
+.fadeIn {
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+div.h-channel,
+div.h-conv {
+    height: 100%;
+    margin-top: 100px;
+}
+
+.h-chat-custom .h-channel .h-header,
+.h-chat-custom .h-conv .h-header,
+.h-chat-custom .h-conv .h-chat .h-comment,
+.h-chat-custom .h-conv .h-chat .h-fc-cobrowse,
+.h-chat-custom .h-conv div.body div.message-container.odd span.chat-msg,
+.preview-bubble,
+.notification-container .btn-container .btn-left,
+.iframe-modal .h-modal-notes .modal-header,
+.h-reply-wrapper .h-reply-button .h-img-button {
+    background-color: #45A4EC !important;
+}
+
+div.h-channel .h-header,
+div.h-conv .h-header {
+    background: #45a4ec;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+    display: inline-block;
+    height: auto;
+    min-height: 100px;
+    position: absolute;
+    top: 0;
+    transition: all .3s cubic-bezier(0, 0, .2, 1);
+    width: 100%;
+    z-index: 100;
+}
+
+div.h-channel .h-header.h-small-header .title,
+div.h-channel>div,
+div.h-conv .h-header.h-small-header .title,
+div.h-conv>div {
+    width: 100%;
+}
+
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+    background: 0 0;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+div.h-channel .h-header .title,
+body[dir=ltr] div.h-conv .h-header .title {
+    float: left;
+}
+
+div.h-channel .h-header .title,
+div.h-conv .h-header .title {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.23rem;
+    height: 100%;
+    padding: 14px 20px;
+    vertical-align: middle;
+    width: 85%;
+}
+
+div.h-channel .h-header span.ic-chat,
+div.h-conv .h-header span.ic-chat {
+    display: inline-block;
+    font-size: 20px;
+    height: 24px;
+    margin-bottom: 5px;
+    padding-top: 2px;
+    width: 24px;
+}
+
+.h-chat-custom .h-channel .h-header .icon,
+.h-chat-custom .h-conv .h-header .icon,
+.h-chat-custom .h-channel .h-header .conv-title,
+.h-chat-custom .h-conv .h-header .conv-title,
+.h-chat-custom .h-channel .h-header .ic-back,
+.h-chat-custom .h-conv .h-header .ic-back,
+.h-chat-custom .h-channel .h-header .title,
+.h-chat-custom .h-conv .h-header .title,
+.h-chat-custom .h-conv .h-chat .h-comment,
+.h-chat-custom .h-conv .h-chat .h-fc-cobrowse,
+.h-chat-custom .h-conv div.body div.message-container.odd span.chat-msg,
+.iframe-modal .h-modal-notes .modal-header .frame-title,
+.iframe-modal .h-modal-notes .modal-header .h-close i,
+.preview-bubble,
+.h-reply-wrapper .h-reply-button .h-img-button {
+    color: #FFFFFF !important;
+}
+
+div.h-channel .h-header .icon,
+div.h-conv .h-header .icon {
+    font-size: 18px;
+}
+
+i.icon {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    float: left;
+    margin: 0;
+    text-align: right;
+}
+
+a.icon,
+i.icon {
+    height: 20px;
+    width: 20px;
+}
+
+div.h-channel .h-header h1.list-title,
+div.h-conv .h-header h1.list-title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 6px 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    text-transform: unset;
+    transition: .25s all;
+    white-space: nowrap;
+}
+
+div.h-channel .h-header p.list-desc,
+div.h-conv .h-header p.list-desc {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 4px 0 0;
+    max-height: 1.2rem;
+    max-width: 100%;
+    opacity: .8;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+div.h-channel .h-header .icon.mild,
+div.h-conv .h-header .icon.mild {
+    opacity: .5;
+}
+
+.icon-ic_chat_icon:before {
+    content: "\f108";
+}
+
+.icon-agent_default_pic:before,
+.icon-compress-alt:before,
+.icon-download:before,
+.icon-expand-alt:before,
+.icon-ic_attachment:before,
+.icon-ic_back:before,
+.icon-ic_chat:before,
+.icon-ic_chat_double:before,
+.icon-ic_chat_icon:before,
+.icon-ic_close:before,
+.icon-ic_close_small:before,
+.icon-ic_download_white:before,
+.icon-ic_faq:before,
+.icon-ic_image:before,
+.icon-ic_message:before,
+.icon-ic_message_error:before,
+.icon-ic_message_sending:before,
+.icon-ic_not_verified:before,
+.icon-ic_pencil:before,
+.icon-ic_reply:before,
+.icon-ic_search:before,
+.icon-ic_send:before,
+.icon-ic_smiley2:before,
+.icon-ic_smiley:before,
+.icon-ic_trash:before,
+.icon-ic_unauthenticated:before,
+[data-icon]:before {
+    display: inline-block;
+    font-family: fs-icons;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: 1;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+.d-hotline.h-btn .chat-content {
+    display: table-cell;
+    font-size: 23px;
+    height: 100%;
+    padding: 2px 0 0 2px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+ .hotline-launcher.h-open, .expanded-modal .hotline-launcher {
+    height: calc(100% - 150px);
+    max-height: 720px;
+    min-height: 0;
+    width: 390px;
+}
+.hotline-launcher.h-open {
+    display: block;
+    margin: 20px;
+    width: 390px;
+}
+.viewport.h-chat-custom.h-open {
+    display: block;
+    height: 100%!important;
+    margin: 0;
+    opacity: 1;
+    width: 100%;
+    z-index: 2147483600!important;
+}
+.viewport.h-chat-custom {
+    background: #fff;
+    border-radius: 5px;
+    bottom: 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,.16)!important;
+    height: 80%!important;
+    max-height: unset;
+    min-height: unset;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: all 150ms ease-in;
+    z-index: 1;
+}
+div.h-channel .h-header .minimize, div.h-conv .h-header .minimize {
+    right: 15px;
+    top: 8px;
+}
+div.h-channel .h-header .minimize, div.h-conv .h-header .minimize {
+    color: #fff;
+    cursor: pointer;
+    display: table-cell;
+    font-size: 1.23rem;
+    padding: 10px 0;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    vertical-align: middle;
+    z-index: 100;
+}
+.icon-ic_close:before {
+    content: "\f109";
+}
+.h-categories {
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    overflow-y: unset;
+    width: 100%;
+}
+.h-categories ul {
+    list-style: none;
+    margin: 0 0 3rem;
+    padding: 0;
+    width: 100%;
+}
+.h-categories ul li:first-child {
+    margin-top: 10px;
+}
+.h-categories ul li {
+    border-bottom: 1px solid #f0f0f1;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    width: 100%;
+}
+.h-category-item {
+    display: table;
+    padding: .65rem 0;
+    position: relative;
+    width: 100%;
+}
+div.h-channel div.channel {
+    max-height: 86px;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 100%;
+}
+.h-categories .channel-link {
+    display: block;
+    width: 100%;
+}
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+.h-category-item .h-category-icon {
+    display: table-cell;
+    padding: 10px 10px 10px 20px;
+    vertical-align: middle;
+    width: 65px;
+}
+.h-category-item .h-category-icon .img-circle {
+    border-radius: 3px;
+    height: auto;
+    max-height: 100%;
+}
+.avatar-image {
+    height: 40px;
+    width: 40px;
+}
+.avatar-image, table {
+    border-collapse: collapse;
+}
+body a, html a {
+    color: #525252;
+}
+.h-category-item .h-category-detail {
+    display: block;
+    overflow: hidden;
+    padding: 10px 0 14px;
+    position: relative;
+    width: 78%;
+}
+.h-category-item .h-category-detail h1 {
+    color: #091e42;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 5px 0 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: unset;
+    white-space: nowrap;
+}
+.h-category-item .h-category-detail .welcome-text .last-msg-preview .h-message-text, .h-category-item .h-category-detail h1, .h-category-item .h-category-detail h2 {
+    max-width: 100%;
+    min-width: 100%;
+    text-overflow: ellipsis;
+    width: 0;
+}
+div.h-channel div.channel .welcome-text {
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.h-category-item .h-category-detail h2 {
+    color: #7c818b;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    max-width: 70%;
+    width: 70%;
+}
+.h-category-item .h-category-detail .welcome-text .last-msg-preview .h-message-text, .h-category-item .h-category-detail h1, .h-category-item .h-category-detail h2 {
+    max-width: 100%;
+    min-width: 100%;
+    text-overflow: ellipsis;
+    width: 0;
+}
+div.h-channel div.channel .welcome-text .last-msg-preview {
+    display: inline-block;
+    max-height: 19px;
+    overflow: hidden;
+    width: 95%;
+}
+div.h-channel div.channel .welcome-text .last-msg-preview .h-message-text {
+    display: block;
+    line-height: 1.4;
+    max-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.h-category-item .h-category-detail .welcome-text .last-msg-preview .h-message-text, .h-category-item .h-category-detail h1, .h-category-item .h-category-detail h2 {
+    max-width: 100%;
+    min-width: 100%;
+    text-overflow: ellipsis;
+    width: 0;
+}
+div.h-channel div.channel .welcome-text .last-msg-preview .h-message-text .emojiCe {
+    height: 16px;
+    width: 16px;
+}
+.emojiCe {
+    border: 0;
+    display: inline-block;
+    height: 20px;
+    margin: 0;
+    outline: 0;
+    vertical-align: middle;
+    width: 20px;
+}
+.h-category-item .h-conv-user {
+    position: absolute;
+    text-align: right;
+    top: 27px;
+}
+.h-category-item {
+    display: table;
+    padding: .65rem 0;
+    position: relative;
+    width: 100%;
+}
