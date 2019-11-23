@@ -157,10 +157,10 @@ class Personalize_Login_Plugin {
 	            'title' => __( 'Sign in to your account to continue' ),
 	            'content' => '[custom-login-form]'
 	        ),
-	        'member-account' => array(
-	            'title' => __( 'Your Account' ),
-	            'content' => '[account-info]'
-	        ),
+	        // 'member-account' => array(
+	        //     'title' => __( 'Your Account' ),
+	        //     'content' => '[account-info]'
+	        // ),
 			'member-register' => array(
 		        'title' => __( 'Register', 'personalize-login' ),
 		        'content' => '[custom-register-form]'
@@ -240,7 +240,7 @@ class Personalize_Login_Plugin {
 	            wp_redirect( admin_url() );
 	        }
 	    } else {
-	        wp_redirect( home_url( 'member-account' ) );
+	        wp_redirect( home_url( 'dashboard' ) );
 	    }
 	}
 
@@ -349,7 +349,7 @@ class Personalize_Login_Plugin {
 	        }
 	    } else {
 	        // Non-admin users always go to their account page after login
-	        $redirect_url = home_url( 'member-account' );
+	        $redirect_url = home_url( 'dashboard' );
 	    }
 	 
 	    return wp_validate_redirect( $redirect_url, home_url() );

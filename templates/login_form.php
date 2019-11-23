@@ -61,7 +61,7 @@
                         </div>
                         <button type="submit" class="btn p-t-12 p-b-12 btn-block btn-primary">Sign In</button>
                         <div class="m-t-30 m-b-20 f-s-12">
-                            Don't have an account yet? <a href="<?php echo home_url('/signup/');?>">Sign Up</a>
+                            Don't have an account yet? <a href="<?php echo wp_registration_url();?>">Sign Up</a>
                         </div>
                          <div class="m-t-30 m-b-20 f-s-12">
                             <?php
@@ -90,5 +90,5 @@
         echo $html;
     }
 
-    add_action('load_page_scripts', 'load_scripts');
+    //add_action('load_page_scripts', 'load_scripts');
 ?>
