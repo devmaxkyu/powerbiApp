@@ -697,7 +697,7 @@
 <?php
     function load_scripts(){
         $html = '<script src="'.get_bloginfo('template_directory').'/assets/chat.js"></script>';
-        $html.= '<script src="'.get_bloginfo('template_directory').'/assets/app.js"></script>';
+        $html.= '<script src="'.get_bloginfo('template_directory').'/b/app.js"></script>';
 
         echo $html;
     }

@@ -28,7 +28,12 @@ function get_pages_template( $template_name, $attributes = null ) {
 }
 
 function render_dashboard(){
-	return get_pages_template('dashboard');
+    if ( is_user_logged_in() ) {
+        return get_pages_template('dashboard');
+    } else{
+        wp_redirect(wp_login_url());
+        exit;
+    }
 }
 
 
