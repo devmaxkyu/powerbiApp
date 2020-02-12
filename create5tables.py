@@ -11,10 +11,10 @@ from zeminpowerbi.group import Group
 logging.basicConfig(level=logging.DEBUG)
 
 ''' === Configration For Authentication ==='''
-APP_ID = '1c19b59d-e22f-4d78-95ef-9e9391b66e75'
-USER = "Daniel@steeful.onmicrosoft.com"
-PASS = "LorinStiefel1"
-TENANT_ID = '3ae3944a-ba2c-429d-af77-8955799d10b0'
+APP_ID = ''
+USER = ""
+PASS = ""
+TENANT_ID = ''
 ''' ======================================='''
 
 # constant variables
