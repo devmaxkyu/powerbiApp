@@ -1,4 +1,4 @@
-# -*- coding: future_fstrings -*-
+
 import json
 
 
@@ -242,10 +242,12 @@ class MeasureEncoder(json.JSONEncoder):
 class Column:
     name_key = 'name'
     datatype_key = 'dataType'
+    summarizeBy = 'summarizeBy'
 
-    def __init__(self, name, data_type):
+    def __init__(self, name, data_type, summarizeBy = 'none'):
         self.name = name
         self.data_type = data_type
+        self.summarizeBy = summarizeBy
 
     def __repr__(self):
         return f'<Column {str(self.__dict__)}>'

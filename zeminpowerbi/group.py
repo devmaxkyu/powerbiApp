@@ -1,4 +1,4 @@
-# -*- coding: future_fstrings -*-
+
 import json
 
 
@@ -8,7 +8,7 @@ class Group:
     is_readonly_key = 'isReadOnly'
     is_on_dedicated_capacity_key = 'isOnDedicatedCapacity'
 
-    def __init__(self, name, group_id, is_readonly=False, is_on_dedicated_capacity=False):
+    def __init__(self, name, group_id =None, is_readonly=False, is_on_dedicated_capacity=False):
         self.name = name
         self.id = group_id
         self.is_readonly = is_readonly
@@ -28,3 +28,16 @@ class Group:
 
     def __repr__(self):
         return f'<Group {str(self.__dict__)}>'
+
+
+class GroupEncoder(json.JSONEncoder):
+    def default(self, o):
+        
+        json_dict = {
+            Group.name_key: o.name,
+            #Group.id_key: o.id,
+            #Group.is_readonly_key: o.is_readonly,
+            #Group.is_on_dedicated_capacity_key: o.is_on_dedicated_capacity
+        }
+
+        return json_dict

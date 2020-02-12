@@ -1,4 +1,4 @@
-# -*- coding: future_fstrings -*-
+
 import requests
 import json
 from .utils import convert_datetime_fields
@@ -118,6 +118,7 @@ class Datasets:
         url = f'{self.base_url}{groups_part}/{self.datasets_snippet}'
         # form the headers
         headers = self.client.auth_header
+        
         # form the json dict
         json_dict = DatasetEncoder().default(dataset)
 
@@ -335,7 +336,7 @@ class Datasets:
 
         # 200 is the only successful code, raise an exception on any other response code
         if response.status_code != 200:
-            print(url)
+            
             raise HTTPError(response, f'Dataset gateway datasources request returned http error: {response.json()}')
 
         data_sources = json.loads(response.text)["value"]
